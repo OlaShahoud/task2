@@ -1,0 +1,13 @@
+.Footer {
+    background-color: rgb(27, 27, 27);
+    color: #fff;
+    padding: 20px 0px 20px 120px;
+    font-size: 20px;
+}
+
+@media(max-width:700px) {
+    .Footer {
+        padding: 20px 0px 20px 20px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,201 @@
+    .Flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .Container-Top {
+        padding: 10px 0px;
+    }
+    
+    .Container {
+        padding: 20px 100px;
+    }
+    
+    .nav1 {
+        border-bottom: 1px solid#eee;
+    }
+    
+    .nav1-item {
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav1-item p {
+        opacity: .5;
+    }
+    
+    .faEnvelope,
+    .faMap {
+        color: #f35525;
+        margin-right: 10px;
+    }
+    
+    .icon-list {
+        margin: 10px 7rem 0px 0px;
+    }
+    
+    .faEnvelope {
+        margin: 0px 10px 0px 7rem;
+    }
+    
+    .icon-list,
+    .list-nav {
+        list-style: none;
+        display: flex;
+    }
+    
+    .line {
+        width: 1px;
+        height: 40px;
+        background-color: #eee;
+        margin: 0px 30px;
+    }
+    
+    .iconItem {
+        width: 40px;
+        height: 40px;
+        background-color: gray;
+        color: #fff;
+        margin-left: 10px;
+        border-radius: 50%;
+        font-size: 25px;
+        opacity: .5;
+    }
+    
+    .Nav {
+        position: fixed;
+        width: 100%;
+        display: flex;
+        z-index: 10;
+        background-color: #fff;
+    }
+    
+    .listNav {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        align-items: center;
+        list-style: none;
+        font-size: 20px;
+    }
+    
+    .list-item a {
+        text-decoration: none;
+        padding: 0px 2rem;
+        color: black;
+    }
+    
+    .list-item a:active {
+        color: #f35525;
+    }
+    
+    .Schedual {
+        background-color: black;
+        color: #fff;
+        width: 12rem;
+        height: 35px;
+        border-radius: 30px;
+        font-size: 16px;
+        border: none;
+        position: relative;
+    }
+    
+    .icon {
+        display: flex;
+    }
+    
+    .FaCalendar {
+        width: 35px;
+        height: 35px;
+        background-color: #f35525;
+        color: #fff;
+        border-radius: 50%;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: -10px;
+    }
+    
+    .divIcon {
+        font-size: 25px;
+        visibility: hidden;
+        width: 180px;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+    }
+    
+    @media ( max-width: 950px) {
+        .Nav {
+            top: 0;
+        }
+        .nav1 {
+            display: none;
+            height: 0px;
+        }
+        .Container {
+            padding: 0px 100px 0px 100px;
+            align-items: center;
+        }
+        .divIcon {
+            visibility: visible;
+            right: 120px;
+        }
+        .bars-icon {
+            position: absolute;
+            right: 0;
+        }
+        .Logo {
+            width: 80%;
+        }
+        .list-nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: start;
+            visibility: visible;
+            position: absolute;
+            right: 100px;
+            margin-top: 350px;
+            padding: 20px 10px;
+            background-color: #ecebeb;
+            filter: opacity(.8);
+            border-radius: 10px;
+        }
+        .listNav {
+            visibility: hidden;
+            width: 0%;
+        }
+        .cancel-icon {
+            visibility: visible;
+        }
+        .list-item {
+            padding-bottom: 30px;
+        }
+        .list-item a {
+            padding: 0px 0rem;
+        }
+    }
+    
+    @media(max-width: 576px) {
+        .Container {
+            padding: 0px 10px;
+        }
+        .divIcon {
+            visibility: visible;
+            right: 10px;
+        }
+        .list-nav {
+            right: 10px;
+        }
+        .list-item {
+            padding-bottom: 30px;
+        }
+    }
